@@ -17,14 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
         btnEggRNG = (TextView) findViewById(R.id.btn_eggRNG);
 
-//        btnEggRNG.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent it = new Intent(MainActivity.this, ViewHistoricalDataActivity.class);
-//                startActivity(it);
-//            }
-//        });
-
+        btnEggRNG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(MainActivity.this, EggRNGActivity.class);
+                startActivity(it);
+                overridePendingTransition(0, 0);
+            }
+        });
     }
-    //test
 }
