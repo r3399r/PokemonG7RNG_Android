@@ -2,6 +2,7 @@ package com.yue.pokemong7rngtool;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;
 
 /**
