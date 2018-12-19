@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PokemonG7RNGTool</string>
+    <string name="title_already_has_seed">已有種子</string>
+    <string name="title_find_seed">找種子</string>
+
+    <string name="start_find_seed">開始</string>
 </resources>
