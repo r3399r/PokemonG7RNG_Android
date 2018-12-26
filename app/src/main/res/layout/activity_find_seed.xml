@@ -6,50 +6,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/magikarp_series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/magikarp_series"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
     <TextView
         android:id="@+id/btn_start_find_seed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="10dp"
         android:text="@string/start_find_seed"
         android:textSize="30sp"/>
 
     <TextView
-        android:id="@+id/text_result1"
+        android:id="@+id/find_seed_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
+        android:textSize="18sp"/>
 
 </LinearLayout>

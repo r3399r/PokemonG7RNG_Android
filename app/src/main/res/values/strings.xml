@@ -4,4 +4,11 @@
     <string name="title_find_seed">找種子</string>
 
     <string name="start_find_seed">開始</string>
+    <string name="status0">status[0]</string>
+    <string name="status1">status[1]</string>
+    <string name="status2">status[2]</string>
+    <string name="status3">status[3]</string>
+
+    <string name="magikarp_series">Magikarp Series</string>
+
 </resources>
