@@ -8,34 +8,50 @@
     tools:context=".EggRNGActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/status_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="number" />
+        android:hint="@string/status0"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/status_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="number" />
+        android:hint="@string/status1"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/status_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="number" />
+        android:hint="@string/status2"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/status_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="number" />
+        android:hint="@string/status3"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/RNG_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:textSize="18sp" />
 </LinearLayout>

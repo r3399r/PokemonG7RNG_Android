@@ -6,50 +6,234 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_1to10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series1"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_11to20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series2"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_21to30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series3"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_31to40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series4"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_41to50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series5"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_51to60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series6"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_61to70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_71to80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series8"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_81to90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series9"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_91to100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/magikarp_series_101to110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series11"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/magikarp_series_111to120"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="01"
+            android:gravity="center"
+            android:hint="@string/magikarp_series12"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/magikarp_series_121to127"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:digits="01"
+        android:gravity="center"
+        android:hint="@string/magikarp_series13"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="7"
+        android:textSize="12sp" />
+
     <TextView
         android:id="@+id/btn_start_find_seed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:layout_marginTop="150dp"
         android:text="@string/start_find_seed"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/text_result1"
+        android:id="@+id/find_seed_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
         android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:id="@+id/text_result4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="30sp"/>
+        android:textSize="18sp" />
 
 </LinearLayout>
