@@ -14,7 +14,7 @@ public class EggRNGActivity extends AppCompatActivity {
     private TextView txtRNGResult;
 
     int[] RNGResult = new int[4];
-    int[] status = { 0xbd6225ee, 0x3a2edfb4, 0xb620b514, 0x73dbdf1f };
+    int[] status = {0xbd6225ee, 0x3a2edfb4, 0xb620b514, 0x73dbdf1f};
     TinyMT tiny = new TinyMT(status, new TinyMTParameter(0x8f7011ee, 0xfc78ff1f, 0x3793fdff));
 
     // EggSearchSettingInit
@@ -87,10 +87,9 @@ public class EggRNGActivity extends AppCompatActivity {
         EggRNGSearch.EggRNGResult result = rng.Generate(RNGResult);
 
         // output
-        String statusString =
-                Integer.toHexString(tiny.status[3])+", "+
-                Integer.toHexString(tiny.status[2])+", "+
-                Integer.toHexString(tiny.status[1])+", "+
+        String statusString = Integer.toHexString(tiny.status[3]) + ", " +
+                Integer.toHexString(tiny.status[2]) + ", " +
+                Integer.toHexString(tiny.status[1]) + ", " +
                 Integer.toHexString(tiny.status[0]);
         txtRNGResult.setText(statusString);
 
