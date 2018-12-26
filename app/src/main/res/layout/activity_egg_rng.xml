@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:ems="10"
         android:hint="@string/status0"
         android:importantForAutofill="no"
         android:inputType="text" />
@@ -22,7 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:ems="10"
         android:hint="@string/status1"
         android:importantForAutofill="no"
         android:inputType="text" />
@@ -32,7 +30,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:ems="10"
         android:hint="@string/status2"
         android:importantForAutofill="no"
         android:inputType="text" />
@@ -42,7 +39,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:ems="10"
         android:hint="@string/status3"
         android:importantForAutofill="no"
         android:inputType="text" />
@@ -51,7 +47,5 @@
         android:id="@+id/RNG_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:textSize="18sp" />
+        android:layout_weight="1" />
 </LinearLayout>

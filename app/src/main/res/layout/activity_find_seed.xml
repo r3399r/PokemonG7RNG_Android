@@ -22,8 +22,7 @@
             android:hint="@string/magikarp_series1"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_11to20"
@@ -35,8 +34,7 @@
             android:hint="@string/magikarp_series2"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,8 +53,7 @@
             android:hint="@string/magikarp_series3"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_31to40"
@@ -68,8 +65,7 @@
             android:hint="@string/magikarp_series4"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -88,8 +84,7 @@
             android:hint="@string/magikarp_series5"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_51to60"
@@ -101,8 +96,7 @@
             android:hint="@string/magikarp_series6"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -121,8 +115,7 @@
             android:hint="@string/magikarp_series7"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_71to80"
@@ -134,8 +127,7 @@
             android:hint="@string/magikarp_series8"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -154,8 +146,7 @@
             android:hint="@string/magikarp_series9"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_91to100"
@@ -167,8 +158,7 @@
             android:hint="@string/magikarp_series10"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -187,8 +177,7 @@
             android:hint="@string/magikarp_series11"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
 
         <EditText
             android:id="@+id/magikarp_series_111to120"
@@ -200,8 +189,7 @@
             android:hint="@string/magikarp_series12"
             android:importantForAutofill="no"
             android:inputType="number"
-            android:maxLength="10"
-            android:textSize="12sp" />
+            android:maxLength="10" />
     </LinearLayout>
 
     <EditText
@@ -214,8 +202,7 @@
         android:hint="@string/magikarp_series13"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:maxLength="7"
-        android:textSize="12sp" />
+        android:maxLength="7" />
 
     <TextView
         android:id="@+id/btn_start_find_seed"
@@ -233,7 +220,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:textSize="18sp" />
+        android:gravity="center" />
 
 </LinearLayout>
