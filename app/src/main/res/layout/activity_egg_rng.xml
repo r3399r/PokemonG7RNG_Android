@@ -7,45 +7,82 @@
     android:orientation="vertical"
     tools:context=".EggRNGActivity">
 
-    <EditText
-        android:id="@+id/status_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:hint="@string/status0"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/status_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="@string/status1"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/status_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="0123456789ABCDEFabcdef"
+            android:gravity="center"
+            android:hint="@string/status0"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
 
-    <EditText
-        android:id="@+id/status_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="@string/status2"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/status_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="0123456789ABCDEFabcdef"
+            android:gravity="center"
+            android:hint="@string/status1"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
 
-    <EditText
-        android:id="@+id/status_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="@string/status3"
-        android:importantForAutofill="no"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/status_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="0123456789ABCDEFabcdef"
+            android:gravity="center"
+            android:hint="@string/status2"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <EditText
+            android:id="@+id/status_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:digits="0123456789ABCDEFabcdef"
+            android:gravity="center"
+            android:hint="@string/status3"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/RNG_result"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_start_calc"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="@string/start_calc"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/list_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

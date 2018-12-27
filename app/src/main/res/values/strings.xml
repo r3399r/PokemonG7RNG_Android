@@ -3,12 +3,13 @@
     <string name="title_already_has_seed">Seed already exists</string>
     <string name="title_find_seed">Finding seed</string>
 
-    <string name="start_find_seed">START!</string>
+    <string name="start_calc">START!</string>
     <string name="status0">status[0]</string>
     <string name="status1">status[1]</string>
     <string name="status2">status[2]</string>
     <string name="status3">status[3]</string>
 
+    <string name="start_find_seed">START!</string>
     <string name="magikarp_series1">001&#8211;010</string>
     <string name="magikarp_series2">011&#8211;020</string>
     <string name="magikarp_series3">021&#8211;030</string>
