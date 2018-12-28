@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".EggRNGActivity" />
-        <activity android:name=".FindSeedActivity"></activity>
+        <activity android:name=".FindSeedActivity" />
+        <activity android:name=".ResultListActivity"></activity>
     </application>
 
 </manifest>

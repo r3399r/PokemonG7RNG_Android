@@ -4,10 +4,19 @@
     <string name="title_find_seed">Finding seed</string>
 
     <string name="start_calc">START!</string>
+    <string name="text_seed">Seed:</string>
+    <string name="text_pre_parent">♂:</string>
+    <string name="text_post_parent">♀:</string>
     <string name="status0">status[0]</string>
     <string name="status1">status[1]</string>
     <string name="status2">status[2]</string>
     <string name="status3">status[3]</string>
+    <string name="input_hp">HP</string>
+    <string name="input_atk">Atk</string>
+    <string name="input_def">Def</string>
+    <string name="input_spa">SpA</string>
+    <string name="input_spd">SpD</string>
+    <string name="input_spe">Spe</string>
 
     <string name="start_find_seed">START!</string>
     <string name="magikarp_series1">001&#8211;010</string>
@@ -24,4 +33,34 @@
     <string name="magikarp_series12">111&#8211;120</string>
     <string name="magikarp_series13">121&#8211;127</string>
 
+    <string name="nature0">Hardy</string>
+    <string name="nature1">Lonely</string>
+    <string name="nature2">Brave</string>
+    <string name="nature3">Adamant</string>
+    <string name="nature4">Naughty</string>
+    <string name="nature5">Bold</string>
+    <string name="nature6">Docile</string>
+    <string name="nature7">Relaxed</string>
+    <string name="nature8">Impish</string>
+    <string name="nature9">Lax</string>
+    <string name="nature10">Timid</string>
+    <string name="nature11">Hasty</string>
+    <string name="nature12">Serious</string>
+    <string name="nature13">Jolly</string>
+    <string name="nature14">Naive</string>
+    <string name="nature15">Modest</string>
+    <string name="nature16">Mild</string>
+    <string name="nature17">Quiet</string>
+    <string name="nature18">Bashful</string>
+    <string name="nature19">Rash</string>
+    <string name="nature20">Calm</string>
+    <string name="nature21">Gentle</string>
+    <string name="nature22">Sassy</string>
+    <string name="nature23">Careful</string>
+    <string name="nature24">Quirky</string>
+
+    <string name="male">♂</string>
+    <string name="female">♀</string>
+    <string name="hidden_ability">H</string>
+    <string name="title_activity_result_list">ResultListActivity</string>
 </resources>
