@@ -91,9 +91,11 @@ public class ResultListActivity extends AppCompatActivity {
         TinyMT tiny = new TinyMT(seed, new TinyMTParameter(0x8f7011ee, 0xfc78ff1f, 0x3793fdff));
 
         pre_item = prefs.getInt("pre_item", 0);
-        post_item = prefs.getInt("post_item", 0);
         pre_ability = prefs.getInt("pre_ability", 0);
+        pre_ditto_checked = prefs.getBoolean("pre_ditto", false);
+        post_item = prefs.getInt("post_item", 0);
         post_ability = prefs.getInt("post_ability", 0);
+        post_ditto_checked = prefs.getBoolean("post_ditto", false);
         // give the values
         EggRNGSearch rng = new EggRNGSearch();
         rng.GenderRatio = sex_threshold;
@@ -148,7 +150,7 @@ public class ResultListActivity extends AppCompatActivity {
 
             String ability;
             int abilityCode = result.Ability;
-            if (abilityCode < 2) ability = String.valueOf(++abilityCode);
+            if (abilityCode < 2) ability = String.valueOf(abilityCode + 1);
             else ability = getString(R.string.hidden_ability);
 
             int natureCode = result.Nature;
