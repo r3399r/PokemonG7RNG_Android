@@ -8,11 +8,10 @@
     tools:context=".EggRNGActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txt_seed"
@@ -21,62 +20,41 @@
             android:layout_gravity="center"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:text="@string/text_seed"
-            android:textSize="18sp" />
+            android:text="@string/text_seed" />
 
-        <EditText
+        <TextView
             android:id="@+id/status_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:digits="0123456789ABCDEFabcdef"
             android:gravity="center"
-            android:hint="@string/status3"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:maxLength="8"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/status_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:digits="0123456789ABCDEFabcdef"
             android:gravity="center"
-            android:hint="@string/status2"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:maxLength="8"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/status_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:digits="0123456789ABCDEFabcdef"
             android:gravity="center"
-            android:hint="@string/status1"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:maxLength="8"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/status_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:digits="0123456789ABCDEFabcdef"
             android:gravity="center"
-            android:hint="@string/status0"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:maxLength="8"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
@@ -84,182 +62,493 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt_pre_parent"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="@string/text_pre_parent"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/pre_parent_hp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center"
-            android:hint="@string/input_hp"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/pre_parent_atk"
+            <TextView
+                android:id="@+id/txt_pre_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_parent"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_hp" />
+
+                <EditText
+                    android:id="@+id/pre_parent_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_hp"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_atk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_atk" />
+
+                <EditText
+                    android:id="@+id/pre_parent_atk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_atk"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_def"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_def" />
+
+                <EditText
+                    android:id="@+id/pre_parent_def"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_def"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spa" />
+
+                <EditText
+                    android:id="@+id/pre_parent_spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spa"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_spd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spd" />
+
+                <EditText
+                    android:id="@+id/pre_parent_spd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spd"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_pre_parent_spe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spe" />
+
+                <EditText
+                    android:id="@+id/pre_parent_spe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spe"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_pre_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/txt_item" />
+
+                <Spinner
+                    android:id="@+id/spinner_pre_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_pre_ability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/txt_ability" />
+
+                <Spinner
+                    android:id="@+id/spinner_pre_ability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_pre_Ditto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bool_ditto" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center"
-            android:hint="@string/input_atk"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/pre_parent_def"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_def"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            <TextView
+                android:id="@+id/txt_post_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female_parent"
+                android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/pre_parent_spa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spa"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/pre_parent_spd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spd"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+                <TextView
+                    android:id="@+id/txt_post_parent_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_hp" />
 
-        <EditText
-            android:id="@+id/pre_parent_spe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spe"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+                <EditText
+                    android:id="@+id/post_parent_hp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_hp"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_post_parent_atk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_atk" />
+
+                <EditText
+                    android:id="@+id/post_parent_atk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_atk"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_post_parent_def"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_def" />
+
+                <EditText
+                    android:id="@+id/post_parent_def"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_def"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_post_parent_spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spa" />
+
+                <EditText
+                    android:id="@+id/post_parent_spa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spa"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_post_parent_spd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spd" />
+
+                <EditText
+                    android:id="@+id/post_parent_spd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spd"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_post_parent_spe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/text_spe" />
+
+                <EditText
+                    android:id="@+id/post_parent_spe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/input_spe"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_post_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/txt_item" />
+
+                <Spinner
+                    android:id="@+id/spinner_post_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_post_ability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/txt_ability" />
+
+                <Spinner
+                    android:id="@+id/spinner_post_ability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_post_Ditto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bool_ditto" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/txt_post_parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="@string/text_post_parent"
-            android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/post_parent_hp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_hp"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+    </LinearLayout>
 
-        <EditText
-            android:id="@+id/post_parent_atk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_atk"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/post_parent_def"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_def"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
 
-        <EditText
-            android:id="@+id/post_parent_spa"
+        <CheckBox
+            android:id="@+id/checkBox_MasudaMethod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spa"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:layout_weight="1"
+            android:text="@string/bool_masuda" />
 
-        <EditText
-            android:id="@+id/post_parent_spd"
+        <CheckBox
+            android:id="@+id/checkBox_ShinyCharm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spd"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:layout_weight="1"
+            android:text="@string/bool_shiny" />
 
-        <EditText
-            android:id="@+id/post_parent_spe"
+        <CheckBox
+            android:id="@+id/checkBox_DiffSpecies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:hint="@string/input_spe"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp" />
+            android:layout_weight="1"
+            android:text="@string/bool_diff_species" />
     </LinearLayout>
 
     <TextView

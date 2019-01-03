@@ -6,15 +6,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class EggRNGActivity extends AppCompatActivity {
 
-    private EditText txtSeed0;
-    private EditText txtSeed1;
-    private EditText txtSeed2;
-    private EditText txtSeed3;
+    private TextView txtSeed0;
+    private TextView txtSeed1;
+    private TextView txtSeed2;
+    private TextView txtSeed3;
     private EditText txtStatsPreHp;
     private EditText txtStatsPreAtk;
     private EditText txtStatsPreDef;
@@ -27,6 +31,15 @@ public class EggRNGActivity extends AppCompatActivity {
     private EditText txtStatsPostSpA;
     private EditText txtStatsPostSpD;
     private EditText txtStatsPostSpe;
+    private CheckBox boxMasuda;
+    private CheckBox boxShinyCharm;
+    private CheckBox boxDiffSpecies;
+    private CheckBox boxPreDitto;
+    private Spinner spinnerPreItem;
+    private Spinner spinnerPreAbility;
+    private CheckBox boxPostDitto;
+    private Spinner spinnerPostItem;
+    private Spinner spinnerPostAbility;
     private TextView btnStart;
 
     private int[] seed = {0xbd6225ee, 0x3a2edfb4, 0xb620b514, 0x73dbdf1f};
@@ -59,6 +72,17 @@ public class EggRNGActivity extends AppCompatActivity {
         txtStatsPostSpD = findViewById(R.id.post_parent_spd);
         txtStatsPostSpe = findViewById(R.id.post_parent_spe);
 
+        spinnerPreItem = findViewById(R.id.spinner_pre_item);
+        spinnerPreAbility = findViewById(R.id.spinner_pre_ability);
+        boxPreDitto = findViewById(R.id.checkBox_pre_Ditto);
+        spinnerPostItem = findViewById(R.id.spinner_post_item);
+        spinnerPostAbility = findViewById(R.id.spinner_post_ability);
+        boxPostDitto = findViewById(R.id.checkBox_post_Ditto);
+
+        boxMasuda = findViewById(R.id.checkBox_MasudaMethod);
+        boxShinyCharm = findViewById(R.id.checkBox_ShinyCharm);
+        boxDiffSpecies = findViewById(R.id.checkBox_DiffSpecies);
+
         txtStatsPreHp.setFilters(new InputFilter[]{new InputFilterMinMax("0", "31")});
         txtStatsPreAtk.setFilters(new InputFilter[]{new InputFilterMinMax("0", "31")});
         txtStatsPreDef.setFilters(new InputFilter[]{new InputFilterMinMax("0", "31")});
@@ -89,6 +113,16 @@ public class EggRNGActivity extends AppCompatActivity {
         txtStatsPostSpD.setText("0");
         txtStatsPostSpe.setText("0");
 
+        ArrayAdapter<CharSequence> itemList = ArrayAdapter.createFromResource(EggRNGActivity.this,
+                R.array.spinner_item, android.R.layout.simple_spinner_dropdown_item);
+        spinnerPreItem.setAdapter(itemList);
+        spinnerPostItem.setAdapter(itemList);
+
+        ArrayAdapter<CharSequence> abilityList = ArrayAdapter.createFromResource(EggRNGActivity.this,
+                R.array.spinner_ability, android.R.layout.simple_spinner_dropdown_item);
+        spinnerPreAbility.setAdapter(abilityList);
+        spinnerPostAbility.setAdapter(abilityList);
+
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,6 +137,7 @@ public class EggRNGActivity extends AppCompatActivity {
                 packet.putInt("seed1", seed1);
                 packet.putInt("seed2", seed2);
                 packet.putInt("seed3", seed3);
+
                 packet.putInt("pre_parent0", Integer.valueOf(txtStatsPreHp.getText().toString()));
                 packet.putInt("pre_parent1", Integer.valueOf(txtStatsPreAtk.getText().toString()));
                 packet.putInt("pre_parent2", Integer.valueOf(txtStatsPreDef.getText().toString()));
@@ -115,12 +150,48 @@ public class EggRNGActivity extends AppCompatActivity {
                 packet.putInt("post_parent3", Integer.valueOf(txtStatsPostSpA.getText().toString()));
                 packet.putInt("post_parent4", Integer.valueOf(txtStatsPostSpD.getText().toString()));
                 packet.putInt("post_parent5", Integer.valueOf(txtStatsPostSpe.getText().toString()));
+
+                packet.putInt("pre_item", spinnerPreItem.getSelectedItemPosition());
+                packet.putInt("pre_ability", spinnerPreAbility.getSelectedItemPosition());
+                packet.putBoolean("pre_ditto", boxPreDitto.isChecked());
+                packet.putInt("post_item", spinnerPostItem.getSelectedItemPosition());
+                packet.putInt("post_ability", spinnerPostAbility.getSelectedItemPosition());
+                packet.putBoolean("post_ditto", boxPostDitto.isChecked());
+
+                packet.putBoolean("masuda_method", boxMasuda.isChecked());
+                packet.putBoolean("shiny_charm", boxShinyCharm.isChecked());
+                packet.putBoolean("diff_species", boxDiffSpecies.isChecked());
                 packet.apply();
 
                 Intent it = new Intent(EggRNGActivity.this, ResultListActivity.class);
                 startActivity(it);
                 overridePendingTransition(0, 0);
+            }
+        });
 
+        boxPreDitto.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked) {
+                    boxPostDitto.setChecked(false);
+                    boxDiffSpecies.setChecked(true);
+                    boxDiffSpecies.setEnabled(false); // disable checkbox
+                } else {
+                    boxDiffSpecies.setEnabled(true); // enable checkbox
+                }
+            }
+        });
+
+        boxPostDitto.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked) {
+                    boxPreDitto.setChecked(false);
+                    boxDiffSpecies.setChecked(true);
+                    boxDiffSpecies.setEnabled(false); // disable checkbox
+                } else {
+                    boxDiffSpecies.setEnabled(true); // enable checkbox
+                }
             }
         });
     }

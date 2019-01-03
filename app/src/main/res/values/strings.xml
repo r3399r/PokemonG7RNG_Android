@@ -5,12 +5,14 @@
 
     <string name="start_calc">START!</string>
     <string name="text_seed">Seed:</string>
-    <string name="text_pre_parent">♂:</string>
-    <string name="text_post_parent">♀:</string>
-    <string name="status0">status[0]</string>
-    <string name="status1">status[1]</string>
-    <string name="status2">status[2]</string>
-    <string name="status3">status[3]</string>
+    <string name="male_parent">♂ Parent:</string>
+    <string name="female_parent">♀ Parent:</string>
+    <string name="text_hp">HP:</string>
+    <string name="text_atk">Atk:</string>
+    <string name="text_def">Def:</string>
+    <string name="text_spa">SpA:</string>
+    <string name="text_spd">SpD:</string>
+    <string name="text_spe">Spe:</string>
     <string name="input_hp">HP</string>
     <string name="input_atk">Atk</string>
     <string name="input_def">Def</string>
@@ -63,4 +65,28 @@
     <string name="female">♀</string>
     <string name="hidden_ability">H</string>
     <string name="title_activity_result_list">ResultListActivity</string>
+
+    <string name="txt_item">Item:</string>
+    <string name="txt_ability">Ability:</string>
+    <string-array name="spinner_item">
+        <item>Any</item>
+        <item>Everstone</item>
+        <item>Destiny Knot</item>
+        <item>Power Weight</item>
+        <item>Power Bracer</item>
+        <item>Power Belt</item>
+        <item>Power Lens</item>
+        <item>Power Band</item>
+        <item>Power Anklet</item>
+    </string-array>
+    <string-array name="spinner_ability">
+        <item>1</item>
+        <item>2</item>
+        <item>H</item>
+    </string-array>
+
+    <string name="bool_ditto">Ditto</string>
+    <string name="bool_masuda">International</string>
+    <string name="bool_shiny">Shiny Charm</string>
+    <string name="bool_diff_species">Different Species</string>
 </resources>

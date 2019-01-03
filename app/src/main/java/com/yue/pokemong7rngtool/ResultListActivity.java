@@ -18,6 +18,9 @@ public class ResultListActivity extends AppCompatActivity {
     // EggSearchSettingInit
     int[] pre_parent = new int[6]; // male parent
     int[] post_parent = new int[6]; // female parent
+    int pre_item, post_item;
+    int pre_ability, post_ability;
+    boolean pre_ditto_checked, post_ditto_checked;
     int sex_threshold; // gender ratio
     int selectedIndex; // random or male or female or genderless
 
@@ -87,23 +90,29 @@ public class ResultListActivity extends AppCompatActivity {
 
         TinyMT tiny = new TinyMT(seed, new TinyMTParameter(0x8f7011ee, 0xfc78ff1f, 0x3793fdff));
 
+        pre_item = prefs.getInt("pre_item", 0);
+        post_item = prefs.getInt("post_item", 0);
+        pre_ability = prefs.getInt("pre_ability", 0);
+        post_ability = prefs.getInt("post_ability", 0);
         // give the values
         EggRNGSearch rng = new EggRNGSearch();
         rng.GenderRatio = sex_threshold;
         rng.GenderRandom = selectedIndex < 4;
         rng.GenderMale = selectedIndex == 4;
         rng.GenderFemale = selectedIndex == 5;
-        rng.International = false;
-        rng.ShinyCharm = true;
-        rng.Heterogeneous = true; // not same species
-        rng.Both_Everstone = false;
-        rng.DestinyKnot = false;
-        rng.PowerItems = false;
-        rng.Both_PowerItems = false;
-        rng.MalePowerStat = -3;
-        rng.FemalePowerStat = -1;
-        rng.ParentAbility = 2;
+        rng.International = prefs.getBoolean("masuda_method", false);
+        rng.ShinyCharm = prefs.getBoolean("shiny_charm", false);
+        rng.Heterogeneous = prefs.getBoolean("diff_species", false); // not same species
+        rng.Both_Everstone = pre_item == 1 && post_item == 1;
+        rng.Everstone = pre_item == 1 || post_item == 1;
+        rng.DestinyKnot = pre_item == 2 || post_item == 2;
+        rng.PowerItems = pre_item > 2 || post_item > 2;
+        rng.Both_PowerItems = pre_item > 2 && post_item > 2;
+        rng.MalePowerStat = pre_item - 3;
+        rng.FemalePowerStat = post_item - 3;
+        rng.ParentAbility = !post_ditto_checked ? post_ability : pre_ability;
         rng.ConciderTSV = true;
+//        rng.SearchOtherTSV = ??;
 
         rng.TSV = 386;
         rng.pre_parent = pre_parent;
